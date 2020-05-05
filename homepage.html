@@ -2,41 +2,37 @@
 <html>
     <head>
         <title> CSConnect | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS/homestyle.css" type="text/css"/>
+        <script src="Scripts/homeanimate.js"></script>
     </head>
     <body>
         <div class="top-navbar">
-            <div id="logo">
-                <a href="#">CSConnect</a>
+            <a href="#">CSConnect</a>
+            <a href="#">Projects</a>
+            <a href="#">Messages</a>
+            
+            <div id="profiledropdown">
+                <div id="dropbtn" onclick="showProfile()" value="hidden">You</div>
+                <div class="dropdown-menu">
+                    <a href="#">Name</a>
+                    <hr>
+                    <a href="#">Projects</a>
+                    <a href="#">Messages</a>
+                    <a hre="#">Sign Out</a>
+                </div>
             </div>
-            <div id="projects">
-                <a href="#">Projects</a>
-            </div>
-            <div id="messages">
-                <a href="#">Messages</a>
-            </div>
-            <div id="profiledrop"></div>
         </div>
 
 
         <div id="content">
             <div class="side-navbar">
                 <ul id="area-list">
-                    <li>
-                        <a href="#">Web Development</a>
-                    </li>
-                    <li>
-                        <a href="#">Mobile</a>
-                    </li>
-                    <li>
-                        <a href="#">Desktop</a>
-                    </li>
-                    <li>
-                        <a href="#">Machine Learning</a>    
-                    </li>
-                    <li>
-                        <a href="#">More</a>
-                    </li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Desktop</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">More</a></li>
                 </ul>
             </div>
 
