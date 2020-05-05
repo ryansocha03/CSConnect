@@ -85,26 +85,59 @@ body {
 }
 /*************Side navigation bar*************/
 .side-navbar {
+    position: relative;
     background-color: lavender;
     float: left;
     width: 20%;
     height: auto;
-    z-index: -1;
     margin: 0;
 }
 
 .side-navbar ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .side-navbar li {
-    margin: 20px auto 20px 20px;
+    position: relative;
+}
+
+.side-navbar p {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    transition: 0.2s;
+    margin: 0;
 }
 
 .side-navbar a {
+    display: block;
     text-decoration: none;
     color: black;
+    padding: 15px 0;
+}
+
+.side-navbar ul ul li a:hover {
+    color: lightgray;
+}
+
+
+.side-navbar li:hover > p {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.side-navbar ul ul {
+    background-color: inherit;
+    padding-left: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.side-navbar li:hover > ul {
+    max-height: 500px;
+    transition: max-height 0.4s ease-in;
 }
 
 /***********Search Bar****************/
