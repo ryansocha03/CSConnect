@@ -1,1 +1,108 @@
 <!doctype html>
+<html>
+    <head>
+        <title> CSConnect | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/homestyle.css" type="text/css"/>
+        <script src="Scripts/homeanimate.js"></script>
+    </head>
+    <body>
+        <div class="top-navbar">
+            <a href="#">CSConnect</a>
+            <a href="#">Projects</a>
+            <a href="#">Messages</a>
+            
+            <div id="profiledropdown">
+                <div id="dropbtn" onclick="showProfile()" value="hidden">You</div>
+                <div class="dropdown-menu">
+                    <a href="#">Name</a>
+                    <hr>
+                    <a href="#">Projects</a>
+                    <a href="#">Messages</a>
+                    <a hre="#">Sign Out</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="content">
+            <div class="side-navbar">
+                <ul>
+                    <li><p>Web Development</p>
+                        <ul>
+                            <li><a href="#">Front End</a></li>
+                            <li><a href="#">Back End</a></li>
+                            <li><a href="#">Full Stack</a></li>
+                        </ul>
+                    </li>
+                    <li><p>Mobile</p>
+                        <ul>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">iOS</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </li>
+                    <li><p>Desktop</p>
+                        <ul>
+                            <li><a href="#">Windows</a></li>
+                            <li><a href="#">Mac OS</a></li>
+                            <li><a href="#">Unix/Linux</a></li>
+                        </ul>
+                    </li>
+                    <li><p>Machine Learning</p>
+                        <ul>
+                            <li><a href="#">Deep Learning</a></li>
+                            <li><a href="#">Reinforement Learning</a></li>
+                            <li><a href="#">Generational Learning</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+
+
+
+            <div id="search-bar">
+                <form>
+                    <input type="text" placeholder="Search Areas" name="search">
+                    <input type="button" value="Search">
+                </form>
+
+            </div> 
+
+
+            <div id="area-cards">
+                <div class="card">
+                    <h2>Web Development</h2>
+                    <hr>
+                    <p>Use your web development skills for a variety of web apps and website projects.</p>
+                </div>
+                <div class="card">
+                    <h2>Mobile</h2>
+                    <hr>
+                    <p>Develop mobile applications for every kind of platform and OS.</p>
+                </div>
+                <div class="card">
+                    <h2>Desktop</h2>
+                    <hr>
+                    <p>Work on desktop applications of all shapes and sizes for various operating systems.</p>
+                </div>
+                <div class="card">
+                    <h2>Machine Learning</h2>
+                    <hr>
+                    <p>Create cutting-edge applications utilizing the latest in machine learning techniques.</p>
+                </div>
+                <div class="card">
+                    <h2>More</h2>
+                    <hr>
+                    <p>Explore endless other fields.</p>
+                </div>
+            </div>
+
+
+        </div>
+        
+
+
+    </body>
+</html>
